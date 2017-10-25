@@ -1,2 +1,2 @@
-# SO-TP2
-HashMap Distribuido
+# tp3SO
+TP3 de sistemas operativos

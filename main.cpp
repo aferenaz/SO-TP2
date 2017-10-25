@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     // Inicializo MPI
     status = MPI_Init(&argc, &argv);
     if (status != MPI_SUCCESS){
-        fprintf(stderr, "Error de MPI al inicializar.\n");
+        //printf(stderr, "Error de MPI al inicializar.\n");
         MPI_Abort(MPI_COMM_WORLD, status);
     }
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     // Control del buffering: sin buffering
     setbuf(stdout, NULL);
     setbuf(stderr, NULL);
-    printf("[MPI] Lanzando proceso %u\n", rank);
+    //printf("[MPI] Lanzando proceso %u\n", rank);
 
     if (rank == 0) {
         // Soy el proceso consola

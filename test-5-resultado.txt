@@ -1,0 +1,27 @@
+cachuflo 1
+dc 1
+El string <cachafaz> no está
+El string <cachuflo> está
+El string <operativos> está
+El string <operativos> está
+El string <operativos> no está
+El string <sistemas> está
+El string <tarasca> no está
+geografico 5
+ginebra 1
+ginebra 2
+ginebra 4
+ginebra 5
+ginebra 5
+instrumentos 5
+jorgelin 1
+ocurre 5
+operativos 1
+ordeno 5
+pepito 1
+quieran 5
+ruinas 5
+sistemas 1
+uno 5
+vestibulo 5
+vi 5

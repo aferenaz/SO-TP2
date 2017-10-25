@@ -1,0 +1,33 @@
+generales:
+*cuando un nodo levanta, puede tener un monton de mensajes. Debería procesar todo lo que pueda antes de bloquearse de nuevo.
+*en general, concenso entre 2 nodos en particular puede resultar en un livelock, conviene usar el nodo consola como mediador.
+*si bien en el tp no se toma como algo que esté mal, en general se debe intentar resolver una operación evitando tener que hacer participar
+a todos los nodos (siempre que esto sea posible, por ej en maximum no se puede). Porque a veces tardan en estar disponibles.
+*Considerando que los nodos no están todo el tiempo desocupados, considerar que la consola podría recibir mensajes como respuesta a comandos
+que ya fueron procesados, se tiene que de alguna forma ignorar/descartar estos mensajes (ojo cuando el protocolo tiene un msg de terminación, 
+podrías dejar el nodo bloqueado para siempre)
+
+load:
+*protocolo: consola enviar LOAD_REQ, nodo contesta LOAD_ACK cuando está listo para recibir el nombre del archivo.
+la consola contesta LOAD_DATA con el nombre del archivo si hay un archivo disponible, LOAD_REL sino.
+
+addAndInc:
+*envias a todos, el que lo toma se lo dice a la consola. si hay mas de uno, la consola decide quien lo toma. Se podría tomar el de rank más
+bajo, por ejemplo, pero esto tiende a hacer que algunos nodos trabajen más que otros (no "distribuis" bien el trabajo). Lo mejor acá sería
+que lo tome el primero que llega a la consola (por más que lleguen al mismo tiempo, de la cola de mensajes levantas uno de ellos a la vez)
+
+member:
+*se puede aplicar logica por cortocircuito, cuando uno te dice que si ya está. ignorás los msg que lleguen despues. Por simplicidad podrias 
+esperar que todos terminen aunque no haga falta. Si aplicas cortocircuito no necesitas a todos los nodos disponibles para ejecutar el comando.
+
+maximum:
+*aca no te queda otra que esperar que todos los nodos te manden todos sus datos. Opciones posibles: (a) el nodo avisa de antemano cuantos msg va
+a enviar, (2) el nodo envia un msg indicando que termino de mandar los datos.
+
+
+
+sobre el informe:
+*misma onda del tp2, explicar como pensamos lo que hicimos. NO USAR CODIGO EN LA EXPLICACIÓN NI EXPLICAR EL CÓDIGO. la explicación debe ser 
+conceptual, es decir, contar a grandes razgos que hicimos.
+*en los tests tenemos que verificar que todo ande como se espera. una posible manera es loggear todo lo que pasa, aunque esto supone aumentar
+la complejidad de la implementación.

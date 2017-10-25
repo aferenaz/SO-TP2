@@ -1,0 +1,8 @@
+load corpus-0
+load corpus-1
+load corpus-2
+load corpus-3
+load corpus-4
+maximum
+q
+

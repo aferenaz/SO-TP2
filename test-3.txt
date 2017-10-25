@@ -1,0 +1,22 @@
+load corpusmini corpusmini corpusmini corpusmini corpusmini corpusmini corpusmini corpusmini corpusmini corpusmini
+member ginebra
+member vestibulo
+member quieran
+member ocurre
+member ruinas
+member instrumentos
+member uno
+member ordeno
+member vi
+member geografico
+member ginebraz
+member vestibuloz
+member quieranz
+member ocurrez
+member ruinasz
+member instrumentosz
+member unoz
+member ordenoz
+member viz
+member geograficoz
+q

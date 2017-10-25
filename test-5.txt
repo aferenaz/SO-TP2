@@ -1,0 +1,25 @@
+load corpus-0 corpus-1 corpus-2 corpus-3 corpus-4
+maximum
+addAndInc cachuflo
+addAndInc pepito
+load corpus-0 corpus-1 corpus-2 corpus-3 corpus-4
+member cachuflo
+member tarasca
+maximum
+load corpus-0 corpus-1 corpus-2 corpus-3 corpus-4
+addAndInc jorgelin
+member cachafaz
+load corpus-0 corpus-1 corpus-2 corpus-3 corpus-4
+addAndInc sistemas
+member operativos
+maximum
+addAndInc operativos
+member operativos
+load corpus-0 corpus-1 corpus-2 corpus-3 corpus-4
+addAndInc dc
+member sistemas
+maximum
+member operativos
+imprimir
+q
+

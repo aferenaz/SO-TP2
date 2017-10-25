@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <ctype.h>
 #include "HashMap.hpp"
- 
+
 using namespace std;
 
 typedef pair<string, unsigned int> kv_pair;
@@ -121,7 +121,7 @@ void HashMap::printAll() const {
             it != bucket.end();
             ++it)
         {
-            cout << "<" << (*it).first << "," << (*it).second << ">" << endl;
+            cout <<  (*it).first << " " << (*it).second << endl;
         }
     }
 }

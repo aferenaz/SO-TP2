@@ -1,0 +1,20 @@
+El string <ginebra> está
+El string <vestibulo> está
+El string <quieran> está
+El string <ocurre> está
+El string <ruinas> está
+El string <instrumentos> está
+El string <uno> está
+El string <ordeno> está
+El string <vi> está
+El string <geografico> está
+El string <ginebraz> no está
+El string <vestibuloz> no está
+El string <quieranz> no está
+El string <ocurrez> no está
+El string <ruinasz> no está
+El string <instrumentosz> no está
+El string <unoz> no está
+El string <ordenoz> no está
+El string <viz> no está
+El string <geograficoz> no está
